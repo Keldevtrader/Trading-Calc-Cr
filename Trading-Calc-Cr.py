@@ -35,13 +35,13 @@ def calculate_trading_scenario(total_investment, purchase_price, commission_perc
 st.title("Trading Calculator with Commission Fee (%)")
 
 # User inputs
-total_investment = st.number_input("Total Investment", value=, format="%.2f")
-purchase_price = st.number_input("Price per Share", value=, format="%.2f")
+total_investment = st.number_input("Total Investment", format="%.2f")
+purchase_price = st.number_input("Price per Share", format="%.2f")
 commission_percent = st.number_input("Commission Percentage (%)", value=0.25, format="%.2f")
-tp1_price = st.number_input("TP1 Price", value=, format="%.2f")
-amount_taken_tp1 = st.number_input("Amount Withdrawn at TP1", value=, format="%.2f")
-tp2_price = st.number_input("TP2 Price", value=, format="%.2f")
-sl_price = st.number_input("SL Price", value=, format="%.2f")
+tp1_price = st.number_input("TP1 Price", format="%.2f")
+amount_taken_tp1 = st.number_input("Amount Withdrawn at TP1", format="%.2f")
+tp2_price = st.number_input("TP2 Price", format="%.2f")
+sl_price = st.number_input("SL Price", format="%.2f")
 
 # Calculate button
 if st.button("Calculate"):
